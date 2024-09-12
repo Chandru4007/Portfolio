@@ -1,0 +1,106 @@
+html{
+  scroll-behavior: smooth;
+}
+body{
+    background-color:steelblue;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.topnav {
+    overflow: hidden;
+    padding-left: 2%;
+  }
+  .topnav a { 
+    float: right;
+    margin: 2%;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 10px 10px;
+    text-decoration: none;
+    font-size:20px;
+    border-radius: 10px;
+    transition: 0.5s;
+  }
+  .topnav a:hover {
+    background-color:lavender;
+    color: black;
+    border-radius: 10px;
+    transition: 0.5s;
+  }
+  .container{
+    display: inline-block;
+    margin: 20%;
+  }
+  .text{
+    overflow: hidden;
+    font-size: xx-large;
+    font-weight: 700;
+    border-right: 2px solid rgb(255, 255, 255);
+    white-space: nowrap;
+    animation: typing 4s steps(40,end) infinite;
+  }
+  @keyframes typing{
+    from {
+      width: 0;
+    }
+    to {
+      width: 29%;
+    }
+  }
+img{
+    height: 450px;
+    width: 225px;
+    border-radius: 25px;
+    filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.838));
+}
+.container1{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.container1 div{
+    margin: 2%;
+    align-content: center;
+}
+.icon{
+  display: flex;
+  justify-content: space-around;
+}
+.icon a{
+  font-size: xx-large;
+  padding: 1% 2% 1% 2%;
+  color: black;
+  background-color: lavender;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+.icon a:hover{
+  color: whitesmoke;
+  background-color: cadetblue;
+}
+.container2{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.container2 div{
+  margin: 2%;
+  align-content: center;
+}
+.table1,.table2{
+  background-color: lavender;
+  padding: 2%;
+  border-radius: 15px;
+  transition: 0.5s;
+}
+.table1:hover{
+  transform: scale(1.05);
+  filter: drop-shadow(0px 0px 10px lavender);
+  transition: 0.5s;
+}
+.table2:hover{
+  transform: scale(1.05);
+  filter: drop-shadow(0px 0px 10px lavender);
+  transition: 0.5s;
+}
