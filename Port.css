@@ -2,30 +2,45 @@ html{
   scroll-behavior: smooth;
 }
 body{
-    background-color:steelblue;
+    background-color:rgb(0, 0, 0);
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
-.topnav {
-    overflow: hidden;
-    padding-left: 2%;
-  }
-  .topnav a { 
-    float: right;
-    margin: 2%;
-    color: rgb(255, 255, 255);
-    text-align: center;
-    padding: 10px 10px;
-    text-decoration: none;
-    font-size:20px;
-    border-radius: 10px;
-    transition: 0.5s;
-  }
-  .topnav a:hover {
-    background-color:lavender;
-    color: black;
-    border-radius: 10px;
-    transition: 0.5s;
-  }
+header{
+  position: sticky;
+  top: 0%;
+  overflow: hidden;
+  z-index: 1000;
+  background-color: black;
+}
+h2{
+  color: goldenrod  ;
+  text-align: center;
+}
+.navbar{
+  display: flex;
+  justify-content: space-around;
+  margin: 0.5%;
+}
+.navul{
+  margin-left: 51%;
+}
+.navli{
+  display:inline;
+}
+.navli a{
+  color: white;
+  text-decoration: none;
+  font-size: 20px;         
+  margin:10px;
+  padding:5px;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+.navli a:hover{
+  color: white;         
+  background-color: goldenrod;
+  transition: 0.5s;
+}
   .container{
     display: inline-block;
     margin: 20%;
@@ -34,23 +49,23 @@ body{
     overflow: hidden;
     font-size: xx-large;
     font-weight: 700;
-    border-right: 2px solid rgb(255, 255, 255);
+    color: white;
     white-space: nowrap;
-    animation: typing 4s steps(40,end) infinite;
+    animation: typing 3s steps(150,end) infinite;
   }
   @keyframes typing{
     from {
       width: 0;
     }
     to {
-      width: 29%;
+      width: 400px;
     }
   }
-img{
+.myimage img{
     height: 450px;
     width: 225px;
     border-radius: 25px;
-    filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.838));
+    filter: drop-shadow(0px 0px 3px goldenrod);
 }
 .container1{
     display: flex;
@@ -62,45 +77,75 @@ img{
     margin: 2%;
     align-content: center;
 }
+.myself{
+  color: goldenrod;
+}
 .icon{
   display: flex;
   justify-content: space-around;
 }
 .icon a{
   font-size: xx-large;
-  padding: 1% 2% 1% 2%;
-  color: black;
-  background-color: lavender;
+  padding: 1% 3% 1% 3%;
+  color: white;
+  background-color: rgb(41, 34, 34);
   border-radius: 10px;
   transition: 0.5s;
 }
 .icon a:hover{
-  color: whitesmoke;
-  background-color: cadetblue;
+  color: black;
+  background-color: goldenrod;
+  box-shadow: 0px 0px 10px goldenrod, 0px 0px 10px goldenrod inset;
 }
 .container2{
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-evenly;
+  margin-top: 5%;
+  margin-bottom: 1%;
 }
 .container2 div{
   margin: 2%;
   align-content: center;
 }
 .table1,.table2{
-  background-color: lavender;
-  padding: 2%;
+  color: goldenrod;
+  background-color: rgb(21, 17, 30);
   border-radius: 15px;
   transition: 0.5s;
 }
 .table1:hover{
-  transform: scale(1.05);
-  filter: drop-shadow(0px 0px 10px lavender);
+  box-shadow: 0px 0px 8px rgb(255, 202, 69);;
   transition: 0.5s;
 }
 .table2:hover{
-  transform: scale(1.05);
-  filter: drop-shadow(0px 0px 10px lavender);
+  box-shadow: 0px 0px 8px rgb(255, 202, 69);;
   transition: 0.5s;
 }
+.skill{
+  margin-left: 20%;
+  margin-right: 20%;
+  background-color: rgb(204, 146, 0);
+  color: white;
+  padding-top: 10px;
+  padding-bottom: 30px;
+  border-radius: 15px;
+  transition: all ease-in-out 0.5s;
+}
+.skill:hover{
+  box-shadow: 0px 0px 8px black inset;
+}
+.skill h2{
+  color: white;
+}
+.skill div{
+  margin-left: 10%;
+  margin-right: 10%;
+  font-size: large;
+}
+.conpro img{
+  height: 30%;
+  width: 30%; 
+}
+
